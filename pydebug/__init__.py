@@ -4,9 +4,9 @@ from .pdb import PDBDebugger
 from .profiler import ProfilerDebug, LineProfilerDebug
 
 __all__ = (
-    DisassembleDebug,
-    ObjectInfoDebug,
-    PDBDebugger,
-    ProfilerDebug,
-    LineProfilerDebug,
+    'DisassembleDebug',
+    'ObjectInfoDebug',
+    'PDBDebugger',
+    'ProfilerDebug',
+    'LineProfilerDebug',
 )

@@ -36,6 +36,6 @@ class PDBDebugger(DebugDecorator):
                     return self.func(*args, **kwargs)
             else:
                 return self.func(*args, **kwargs)
-        except Exception as e:
+        except Exception:
             traceback.print_exc(file=sys.stderr)
             Pdb(stdin=sys.__stdin__, stdout=sys.__stdout__).set_trace()

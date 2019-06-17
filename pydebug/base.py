@@ -90,7 +90,7 @@ class DebugDecorator:
         setup() should not return anything
         """
 
-        raise NotImplemented()
+        raise NotImplementedError()
 
     def debug_func(self, *args, **kwargs):
         """
@@ -109,7 +109,7 @@ class DebugDecorator:
         function
         """
 
-        raise NotImplemented()
+        raise NotImplementedError()
 
     def cleanup(self, result=None, *args, **kwargs):
         """
@@ -128,7 +128,7 @@ class DebugDecorator:
         -------
         cleanup() should not return anything
         """
-        raise NotImplemented()
+        raise NotImplementedError()
 
     def __call__(self, *args, **kwargs):
         """
